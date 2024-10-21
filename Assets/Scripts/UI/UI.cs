@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering.Universal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -11,9 +12,11 @@ public class UI : MonoBehaviour
     [SerializeField]
     GameObject GameSetting;
     [SerializeField]
-    GameObject MainState;
+    GameObject Settings;
     [SerializeField]
-    Slider Slider_Musci;
+    List<Text> KeyBoard_txt = new List<Text>();
+
+    private bool BeChoose = false ; 
 
     void Start()
     {
@@ -61,6 +64,28 @@ public class UI : MonoBehaviour
     public void Setting()
     {
         GameSetting.SetActive(false);
-        Slider_Musci.gameObject.SetActive(true);
+        Settings.gameObject.SetActive(true);
     }
+
+    public void KeyBored_ReSetting_Up()
+    {
+        BeChoose = true;
+        if (BeChoose)
+        {
+            // 检测是否有任意键盘按键被按下
+            if (Input.anyKeyDown)
+            {
+                // 遍历所有可能的KeyCode值
+                foreach (KeyCode kcode in System.Enum.GetValues(typeof(KeyCode)))
+                {
+                    // 检测当前KeyCode是否被按下
+                    if (Input.GetKeyDown(kcode))
+                    {
+                        Debug.Log(kcode.ToString());
+                    }
+                }
+            }
+        }
+    }
+
 }

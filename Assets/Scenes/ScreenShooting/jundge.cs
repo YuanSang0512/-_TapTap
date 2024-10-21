@@ -39,7 +39,6 @@ public class jundge : MonoBehaviour
         { 
             Debug.Log("fail");
                 once= false;
-                jundgeaudio.clip = failure;
                 jundgeaudio.Play();
             }
 
