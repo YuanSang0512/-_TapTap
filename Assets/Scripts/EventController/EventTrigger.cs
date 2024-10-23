@@ -13,7 +13,7 @@ public class EventTrigger : MonoBehaviour, IEventTrigger
 {
     [Header("HotKey info")]
     [SerializeField] protected GameObject hotKeyPrefab;
-    [SerializeField] protected GameObject hotKey;
+    protected GameObject hotKey;
     [SerializeField] protected KeyCode keyCode;
     public bool isUsed = false;
 
