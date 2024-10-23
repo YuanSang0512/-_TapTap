@@ -1,20 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 /// <summary>
 /// ³¡¾°×ª»»´¥·¢Æ÷
 /// </summary>
 
-public class SceneSwitchTrigger : MonoBehaviour
+public class SceneSwitchTrigger : SceneTrigger
 {
     [SerializeField] private string sceneName;
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    public override void Update()
     {
-        if(collision.CompareTag("Player"))
+        base.Update();
+        if(Input.GetKeyDown(keyCode))
         {
             EventManager.instance.SaveData();
             StartCoroutine(CameraController.instance.LoadScene(sceneName));
         }
+
+    }
+
+    public override void Event()
+    {
+        base.Event();
     }
 }

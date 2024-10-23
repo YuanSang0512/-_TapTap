@@ -698,6 +698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d6b925f5a67824c95daca0eb270c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
+  keyCode: 32
   sceneName: City
 --- !u!61 &723386095
 BoxCollider2D:
@@ -3038,6 +3040,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 895602762476260617, guid: 26f04525f496eb7449d86f00d118ad25, type: 3}
   m_PrefabInstance: {fileID: 2079255930750402731}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1297685274 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1103568435606708595, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
+  m_PrefabInstance: {fileID: 1095838864403187276}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdbfe1df302130f4ea8eca796b45f001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1303134949
 GameObject:
   m_ObjectHideFlags: 0
@@ -6136,6 +6149,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 680579619683133607, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
+      propertyPath: male
+      value: 
+      objectReference: {fileID: 1297685274}
+    - target: {fileID: 680579619683133607, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1906242361}
+    - target: {fileID: 680579619683133607, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
       propertyPath: Event_DATA_FILE_NAME
       value: ForestEvent.data
       objectReference: {fileID: 0}
@@ -6653,9 +6674,9 @@ SceneRoots:
   - {fileID: 626855040}
   - {fileID: 2462045226433863201}
   - {fileID: 1817336119}
-  - {fileID: 723386096}
   - {fileID: 1551605946}
   - {fileID: 1811837309}
   - {fileID: 1303134951}
   - {fileID: 1807106286565903298}
   - {fileID: 1095838864403187276}
+  - {fileID: 723386096}

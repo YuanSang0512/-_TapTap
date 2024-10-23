@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScenes/Sch_Office.unity
     guid: f8fae06dc69d7084984e18a7ce237f12
   - enabled: 1
+    path: Assets/Scenes/GameScenes/Sch_SecondFloor.unity
+    guid: 6b133e0aaa0c64a4fa501f7f90a3ec3e
+  - enabled: 1
     path: Assets/Scenes/GameScenes/Sch_210.unity
     guid: fc0dc5bb02a307a45bb564b5c5035030
   - enabled: 1

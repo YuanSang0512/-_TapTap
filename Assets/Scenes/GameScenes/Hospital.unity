@@ -236,6 +236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d6b925f5a67824c95daca0eb270c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
+  keyCode: 32
   sceneName: Hos_ThirdFloor
 --- !u!61 &167998734
 BoxCollider2D:
@@ -690,6 +692,99 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a33f207ac6d5b542b4d81664e5fb83e, type: 3}
+--- !u!1 &550601879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 550601882}
+  - component: {fileID: 550601881}
+  - component: {fileID: 550601880}
+  m_Layer: 0
+  m_Name: ToCIty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &550601880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550601879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d6b925f5a67824c95daca0eb270c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
+  keyCode: 32
+  sceneName: City
+--- !u!61 &550601881
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550601879}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &550601882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550601879}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.75, y: -19.09, z: -1.3777318}
+  m_LocalScale: {x: 6.6811924, y: 3.040223, z: 4.2645}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &557222314
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +950,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 680579619683133607, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
+      propertyPath: male
+      value: 
+      objectReference: {fileID: 1003333402}
+    - target: {fileID: 680579619683133607, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1295647868}
+    - target: {fileID: 680579619683133607, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
       propertyPath: Event_DATA_FILE_NAME
       value: HospitalEvent.data
       objectReference: {fileID: 0}
@@ -975,6 +1078,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
+--- !u!114 &1003333402 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1103568435606708595, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
+  m_PrefabInstance: {fileID: 1003333401}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdbfe1df302130f4ea8eca796b45f001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1058486051 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4318178764599623950, guid: be41cdc9f41e63f40b0ed6e921121bf7, type: 3}
@@ -3351,7 +3465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3691143434911047910, guid: be41cdc9f41e63f40b0ed6e921121bf7, type: 3}
       propertyPath: m_LocalScale.y
-      value: 34.706882
+      value: 36.86227
       objectReference: {fileID: 0}
     - target: {fileID: 3691143434911047910, guid: be41cdc9f41e63f40b0ed6e921121bf7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3359,7 +3473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3691143434911047910, guid: be41cdc9f41e63f40b0ed6e921121bf7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.16
+      value: -5.42
       objectReference: {fileID: 0}
     - target: {fileID: 3691143434911047910, guid: be41cdc9f41e63f40b0ed6e921121bf7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3500,8 +3614,9 @@ SceneRoots:
   - {fileID: 510930809}
   - {fileID: 1003333401}
   - {fileID: 393911425}
-  - {fileID: 167998735}
   - {fileID: 596831933}
   - {fileID: 641931774}
   - {fileID: 557222316}
   - {fileID: 341163616}
+  - {fileID: 167998735}
+  - {fileID: 550601882}

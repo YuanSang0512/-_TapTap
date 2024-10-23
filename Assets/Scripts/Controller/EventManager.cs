@@ -14,10 +14,15 @@ public class EventManager : MonoBehaviour
     [Header("SaveData info")]
     public string Event_DATA_FILE_NAME;
 
+    public Player player;
+    public Male male;
+
     public static EventManager instance { get; private set; }
 
     public class Data
     {
+        public Vector2 player_position;
+        public Vector2 male_position;
         public int eventIndex;
         public List<string> events;
     }
@@ -66,6 +71,8 @@ public class EventManager : MonoBehaviour
     {
         var data = new Data();
 
+        data.player_position = player.transform.position;
+        data.male_position = male.transform.position;
         data.eventIndex = eventIndex;
         data.events = TraverseEvents();
 
@@ -101,6 +108,8 @@ public class EventManager : MonoBehaviour
 
     private void LoadingData(Data _data)
     {
+        player.transform.position = _data.player_position;
+        male.transform.position = _data.male_position;
         eventIndex = _data.eventIndex;
     }
     #endregion
