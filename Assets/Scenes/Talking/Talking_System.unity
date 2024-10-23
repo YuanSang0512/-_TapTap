@@ -549,12 +549,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IfFinish: 0
   IfJump: 0
-  peibiao: {fileID: 4900000, guid: 242b7860d22aa88408d26cedcd5dfea0, type: 3}
+  peibiao: {fileID: 4900000, guid: 96129bca4062fd8438657fbde80ba88a, type: 3}
   textComponent: {fileID: 1312723159}
   delayBetweenChars: 0.1
   dialog: []
   index: 0
   GameStory: {fileID: 1871665820}
+  characterNames: []
+  characterImages: []
+  characterSpriteRenderer: {fileID: 1638438113}
 --- !u!4 &1302882320
 Transform:
   m_ObjectHideFlags: 0
