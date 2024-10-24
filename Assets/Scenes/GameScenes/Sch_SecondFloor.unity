@@ -314,6 +314,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
+--- !u!114 &351256688 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1103568435606708595, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
+  m_PrefabInstance: {fileID: 351256687}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdbfe1df302130f4ea8eca796b45f001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &601230269
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 601230271}
   - component: {fileID: 601230270}
+  - component: {fileID: 601230272}
   m_Layer: 0
   m_Name: ToRoofTop
   m_TagString: Untagged
@@ -391,6 +403,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &601230272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601230269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d6b925f5a67824c95daca0eb270c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
+  keyCode: 32
+  sceneName: Sch_RoofTop
 --- !u!1 &613008860
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,6 +512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 676943372}
   - component: {fileID: 676943371}
+  - component: {fileID: 676943373}
   m_Layer: 0
   m_Name: To210
   m_TagString: Untagged
@@ -552,6 +580,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &676943373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676943370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d6b925f5a67824c95daca0eb270c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
+  keyCode: 32
+  sceneName: Sch_210
 --- !u!1001 &755618709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -560,6 +603,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 680579619683133607, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
+      propertyPath: male
+      value: 
+      objectReference: {fileID: 351256688}
+    - target: {fileID: 680579619683133607, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 836776062}
+    - target: {fileID: 680579619683133607, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
+      propertyPath: Event_DATA_FILE_NAME
+      value: Sch_SecondFloorEvent.data
+      objectReference: {fileID: 0}
     - target: {fileID: 5059539951740123932, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
       propertyPath: m_Name
       value: EventManager
@@ -695,7 +750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 322659616400388485, guid: 4c64a4dd357a8c143880e8b26e34ac93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.005027294
+      value: 0.005133629
       objectReference: {fileID: 0}
     - target: {fileID: 4411380524151727766, guid: 4c64a4dd357a8c143880e8b26e34ac93, type: 3}
       propertyPath: animator
@@ -2130,7 +2185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d6b925f5a67824c95daca0eb270c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hotKeyPrefab: {fileID: 4425476277692819442, guid: b9cb5be55b823f84f944d44119e350f4, type: 3}
+  hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
   keyCode: 32
   sceneName: School
 --- !u!1001 &1808387186

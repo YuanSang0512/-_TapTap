@@ -14,7 +14,7 @@ public class SceneSwitchTrigger : SceneTrigger
     public override void Update()
     {
         base.Update();
-        if(Input.GetKeyDown(keyCode))
+        if(Input.GetKeyDown(keyCode) && hotKey != null)
         {
             EventManager.instance.SaveData();
             StartCoroutine(CameraController.instance.LoadScene(sceneName));

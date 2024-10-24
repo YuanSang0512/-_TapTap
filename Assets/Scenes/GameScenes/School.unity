@@ -1820,7 +1820,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a33f207ac6d5b542b4d81664e5fb83e, type: 3}
---- !u!1001 &958215171
+--- !u!1001 &1043761966
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1872,24 +1872,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScreenFader
       objectReference: {fileID: 0}
-    - target: {fileID: 4318178764599623950, guid: be41cdc9f41e63f40b0ed6e921121bf7, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be41cdc9f41e63f40b0ed6e921121bf7, type: 3}
---- !u!1 &958215172 stripped
+--- !u!1 &1043761967 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4318178764599623950, guid: be41cdc9f41e63f40b0ed6e921121bf7, type: 3}
-  m_PrefabInstance: {fileID: 958215171}
+  m_PrefabInstance: {fileID: 1043761966}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &958215173 stripped
+--- !u!95 &1043761968 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8782813750909559022, guid: be41cdc9f41e63f40b0ed6e921121bf7, type: 3}
-  m_PrefabInstance: {fileID: 958215171}
+  m_PrefabInstance: {fileID: 1043761966}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1283634289
 GameObject:
@@ -2025,6 +2021,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 680579619683133607, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
+      propertyPath: male
+      value: 
+      objectReference: {fileID: 1984456352}
+    - target: {fileID: 680579619683133607, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 568862194}
+    - target: {fileID: 680579619683133607, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
+      propertyPath: Event_DATA_FILE_NAME
+      value: SchoolEvent.data
+      objectReference: {fileID: 0}
     - target: {fileID: 5059539951740123932, guid: 17c7f3614582fa64bb9fdd7a00be223d, type: 3}
       propertyPath: m_Name
       value: EventManager
@@ -2279,7 +2287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
-  keyCode: 0
+  keyCode: 32
   sceneName: Sch_Office
 --- !u!61 &1818946355
 BoxCollider2D:
@@ -2352,11 +2360,11 @@ PrefabInstance:
     - target: {fileID: 4411380524151727766, guid: 4c64a4dd357a8c143880e8b26e34ac93, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 958215173}
+      objectReference: {fileID: 1043761968}
     - target: {fileID: 4411380524151727766, guid: 4c64a4dd357a8c143880e8b26e34ac93, type: 3}
       propertyPath: screenFader
       value: 
-      objectReference: {fileID: 958215172}
+      objectReference: {fileID: 1043761967}
     - target: {fileID: 5105260727887014369, guid: 4c64a4dd357a8c143880e8b26e34ac93, type: 3}
       propertyPath: m_Name
       value: CameraController
@@ -2475,20 +2483,31 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
+--- !u!114 &1984456352 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1103568435606708595, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
+  m_PrefabInstance: {fileID: 1984456351}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdbfe1df302130f4ea8eca796b45f001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1827909706}
   - {fileID: 1505384828}
-  - {fileID: 958215171}
   - {fileID: 849434970}
   - {fileID: 1984456351}
   - {fileID: 568862193}
   - {fileID: 1419796232}
   - {fileID: 1718370929}
   - {fileID: 644835993}
-  - {fileID: 1818946356}
   - {fileID: 268448574}
   - {fileID: 173137868}
+  - {fileID: 1043761966}
+  - {fileID: 1818946356}
   - {fileID: 1283634292}
