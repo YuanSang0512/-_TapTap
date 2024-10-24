@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fader
+  - Male
   layers:
   - Default
   - TransparentFX
@@ -12,10 +13,10 @@ TagManager:
   - BackGround
   - Water
   - UI
-  - Player
+  - 
   - Tree
-  - 
-  - 
+  - Male
+  - Player
   - 
   - 
   - 
