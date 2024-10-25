@@ -21,7 +21,7 @@ public class PlayerMoveState : State
     public override void Update()
     {
         base.Update();
-        player.SetVelocity(inputX * Entity.moveSpeed, inputY * Entity.moveSpeed);
+        player.SetVelocity(inputX * player.moveSpeed, inputY * player.moveSpeed);
         if (inputX == 0 && inputY == 0)
             stateMachine.SwitchState(player.idleState);
     }

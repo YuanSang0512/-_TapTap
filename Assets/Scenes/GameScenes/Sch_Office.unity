@@ -1760,7 +1760,8 @@ MonoBehaviour:
   dialog: 0
   rollcharacter: {fileID: 1681551690}
   UI: {fileID: 1681551689}
-  IfUsed: 0
+  IfUsed: 1
+  Player_: {fileID: 1586580488}
 --- !u!1001 &1154574047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1876,6 +1877,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4007949542333884755, guid: 78675c54ee9a10d48acacc157580a2b4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1586580488}
     - target: {fileID: 7090841274672573301, guid: 78675c54ee9a10d48acacc157580a2b4, type: 3}
       propertyPath: m_Pivot.x
       value: 0

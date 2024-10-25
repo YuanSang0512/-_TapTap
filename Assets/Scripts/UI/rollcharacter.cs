@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -14,8 +15,9 @@ public class rollcharacter : MonoBehaviour
     public float delayBetweenChars = 0.1f;
     public string[] dialog_All;
     public string[][] dialog_Tail;
-    public int index;
+    public int index = 0;
     public GameObject GameStory;
+    public Player player;
 
     public List<string> characterNames = new List<string>();             //½ÇÉ«Ãû
     public List<Sprite> characterImages = new List<Sprite>();            //½ÇÉ«Í¼Æ¬
@@ -28,6 +30,7 @@ public class rollcharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        index = 0;
         dialog_All = peibiao.text.Split('#');
 
 
@@ -96,7 +99,7 @@ public class rollcharacter : MonoBehaviour
                 {
                     index = 0;
                     GameStory.SetActive(false);
-                    Entity.isBusy= false;
+                    player.isBusy = false;
                 }
                 else
                 {

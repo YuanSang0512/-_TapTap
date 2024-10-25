@@ -8,10 +8,9 @@ using static System.Runtime.CompilerServices.RuntimeHelpers;
 /// 挂载到可交互物体上使用
 /// </summary>
 
-public class HospitalPhotoEvent : EventTrigger
+public class CameraEvent_withoutDialog : EventTrigger
 {
     [SerializeField] GameObject ScreenShot;                  //截图系统
-    [SerializeField] DialogueTrigger DialogueTriggerDialogue;        //对话脚本启动器
     [SerializeField] Scene Scene_;                            //截图脚本
     public override void Update()
     {
@@ -23,8 +22,6 @@ public class HospitalPhotoEvent : EventTrigger
             ScreenShot.SetActive(true);
 
             Event();
-
-            DialogueTriggerDialogue.IfUsed = false;
 
         }
     }

@@ -339,6 +339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1022590224456509460}
   - component: {fileID: 5589375704296295676}
+  - component: {fileID: 5055017880396345620}
   m_Layer: 0
   m_Name: background_layer_1
   m_TagString: Untagged
@@ -355,11 +356,11 @@ Transform:
   m_GameObject: {fileID: 1585249555664752623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -960, y: -540, z: -2}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 6553290125621830793}
+  m_Father: {fileID: 3307613550571956167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5589375704296295676
 SpriteRenderer:
@@ -402,7 +403,7 @@ SpriteRenderer:
   m_SortingLayerID: -1642360323
   m_SortingLayer: 5
   m_SortingOrder: -1
-  m_Sprite: {fileID: -801122329, guid: 3f70e4160bcd1634c9690380720204d5, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -410,9 +411,22 @@ SpriteRenderer:
   m_Size: {x: 2.89, y: 1.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5055017880396345620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585249555664752623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee2f39cfd3acea4f8f5dfe7d1695919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera_: {fileID: 0}
 --- !u!1 &1628793413943582884
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,6 +535,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4375713213869528510}
+  - {fileID: 1022590224456509460}
   m_Father: {fileID: 6553290125621830793}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -603,12 +618,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8ce290fa2db24040b7aa705b85877ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jundgeaudio: {fileID: 0}
-  success: {fileID: 0}
-  failure: {fileID: 0}
   jindutiao: {fileID: 5734522896051694761}
   once: 1
   Picture: {fileID: 2100000, guid: 90fd422fa7a23874b9ab8dac8adb47fb, type: 2}
+  Camera_system: {fileID: 7019609713293069321}
 --- !u!1 &6898422673864785048
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +690,6 @@ Transform:
   m_Children:
   - {fileID: 3307613550571956167}
   - {fileID: 2573293417116567867}
-  - {fileID: 1022590224456509460}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5463867693000164480

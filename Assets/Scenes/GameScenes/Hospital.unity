@@ -3021,6 +3021,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4007949542333884755, guid: 78675c54ee9a10d48acacc157580a2b4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1295647868}
     - target: {fileID: 7090841274672573301, guid: 78675c54ee9a10d48acacc157580a2b4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3569,6 +3573,7 @@ MonoBehaviour:
   rollcharacter: {fileID: 1401005827}
   UI: {fileID: 1401005826}
   IfUsed: 0
+  Player_: {fileID: 0}
 --- !u!1 &1793421837
 GameObject:
   m_ObjectHideFlags: 0

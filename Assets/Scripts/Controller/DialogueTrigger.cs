@@ -4,22 +4,28 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static System.Runtime.CompilerServices.RuntimeHelpers;
 
+
+
 public class DialogueTrigger : MonoBehaviour, IEventTrigger
 {
     [SerializeField] int dialog;
     [SerializeField]rollcharacter rollcharacter;
     [SerializeField]GameObject UI;
-    [SerializeField] bool IfUsed = false;
-    private void OnTriggerEnter2D(Collider2D collision)
+    public  bool IfUsed = false;
+    public Player Player_;
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player")&& !IfUsed)
         {
 
             UI.SetActive(true);
-            Entity.isBusy = true;
+            Player_.isBusy = true;
+            
             Event();
+
             IfUsed = true;
         }
+
     }
 
     public void Event()

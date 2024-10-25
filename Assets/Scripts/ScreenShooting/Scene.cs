@@ -10,8 +10,16 @@ public class Scene : MonoBehaviour
     public SpriteRenderer spriteRenderer;          //截屏展示的画板
     [SerializeField]GameObject UI_toshow;                  //使用照相功能对应的UI; 
     [SerializeField]GameObject UI_Image;                  //使用照相功能对应的图片; 
-        
 
+    private void Awake()
+    {
+
+    }
+
+    private void Update()
+    {
+
+    }
     public void CaptureAndSave()
     {
         // 创建一个RenderTexture与相机分辨率相同

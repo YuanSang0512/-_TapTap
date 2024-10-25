@@ -7,13 +7,13 @@ using static jundge;
 public class jundge : MonoBehaviour
 {
     // Start is called before the first frame update
-    public AudioSource  jundgeaudio;
-    public AudioClip success;
-    public AudioClip failure;
+    //public AudioSource  jundgeaudio;
+    //public AudioClip success;
+    //public AudioClip failure;
     public Slider jindutiao;
     public bool once = true;
-    [SerializeField]Material Picture; 
-
+    [SerializeField]Material Picture;
+    [SerializeField]GameObject Camera_system;
     void Start()
     {
         jindutiao.interactable= false;
@@ -26,20 +26,21 @@ public class jundge : MonoBehaviour
         jiezou();
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && once)
+        if (Input.GetKeyDown(KeyCode.R) && once)
     {
         if(jindutiao.value >= -.5 && jindutiao.value <=0.5 ) 
         {
             Debug.Log("success");
                 once= false;
-                jundgeaudio.clip= success;
-                jundgeaudio.Play();
+                //jundgeaudio.clip= success;
+                //jundgeaudio.Play();
+                Camera_system.SetActive(false);
         }
         else
         { 
             Debug.Log("fail");
                 once= false;
-                jundgeaudio.Play();
+                //jundgeaudio.Play();
             }
 
     }
