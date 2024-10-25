@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HospitalPhotoEvent : EventTrigger
+public class FireFlyEvent : EventTrigger
 {
     public override void Update()
     {
@@ -22,6 +22,6 @@ public class HospitalPhotoEvent : EventTrigger
         base.Event();
 
 
-        Debug.Log("take photo");
+        Debug.Log("FireFly event");
     }
 }

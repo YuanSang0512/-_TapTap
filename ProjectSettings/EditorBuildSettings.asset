@@ -39,8 +39,11 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScenes/Sch_RoofTop.unity
     guid: 4b2ee5d6ec8ac01488628dc7fec5b564
   - enabled: 1
-    path: Assets/Scenes/GameScenes/Train_123.unity
+    path: Assets/Scenes/GameScenes/Train.unity
     guid: ba3ae9631d87b7b439d4a7c494086d5d
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/TrainStation.unity
+    guid: 4ca9642c118ee6141bff69888df30810
   - enabled: 1
     path: Assets/Scenes/GameScenes/Cliff.unity
     guid: 6b209e41ffc0bfc4d8cc3bd614c57fc2
