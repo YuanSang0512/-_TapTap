@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HospitalPhotoEvent : EventTrigger
+public class TrainPhotoEvent : EventTrigger
 {
     public override void Update()
     {

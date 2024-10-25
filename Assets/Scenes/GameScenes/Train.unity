@@ -11686,25 +11686,15 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 12, y: 11, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 321
+  - m_RefCount: 320
     m_Data: {fileID: 11400000, guid: d61ce53129b43d24290c4169b0f77b0b, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 321
+  - m_RefCount: 320
     m_Data: {fileID: 446446382, guid: 7d5d9d9258d05bb4c87193cfdd8e781a, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 321
+  - m_RefCount: 320
     m_Data:
       e00: 1.6
       e01: 0
@@ -11741,7 +11731,7 @@ Tilemap:
       e32: 3.14e-43
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 321
+  - m_RefCount: 320
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -11806,14 +11796,6 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 1872770051}
     m_ColliderPaths:
-    - - X: 130120000
-        Y: 120120000
-      - X: 119880000
-        Y: 120120000
-      - X: 119880000
-        Y: 109880000
-      - X: 130120000
-        Y: 109880000
     - - X: -429880000
         Y: -10120001
       - X: -250119984
@@ -12048,10 +12030,6 @@ CompositeCollider2D:
         Y: -29880000
   m_CompositePaths:
     m_Paths:
-    - - {x: 13.0119705, y: 10.988}
-      - {x: 13.0119705, y: 12.012}
-      - {x: 11.988, y: 12.0119705}
-      - {x: 11.9880295, y: 10.988}
     - - {x: -42.98803, y: -4.012}
       - {x: -42.987972, y: -1.0120001}
       - {x: -25.012, y: -1.0120295}
@@ -12068,15 +12046,7 @@ CompositeCollider2D:
       - {x: 54.01197, y: 5.012}
       - {x: -53.012, y: 5.011971}
       - {x: -53.01197, y: -4.012}
-    - - {x: 52.988, y: -2.9879706}
-      - {x: 45.012, y: -2.9879706}
-      - {x: 45.01197, y: 0.012}
-      - {x: 23.988003, y: 0.0119707}
-      - {x: 23.987972, y: -2.988}
-      - {x: 19.012, y: -2.9879706}
-      - {x: 19.01197, y: -0.98800004}
-      - {x: 16.988, y: -0.9880293}
-      - {x: 16.987972, y: -2.988}
+    - - {x: 16.988, y: -2.9879706}
       - {x: 9.012, y: -2.9879706}
       - {x: 9.0119705, y: 0.012}
       - {x: -11.012, y: 0.0119707}
@@ -12168,6 +12138,14 @@ CompositeCollider2D:
       - {x: 45.012, y: 1.9880292}
       - {x: 45.012028, y: 3.9880002}
       - {x: 52.988, y: 3.9879704}
+      - {x: 52.987972, y: -2.988}
+      - {x: 45.012, y: -2.9879706}
+      - {x: 45.01197, y: 0.012}
+      - {x: 23.988003, y: 0.0119707}
+      - {x: 23.987972, y: -2.988}
+      - {x: 19.012, y: -2.9879706}
+      - {x: 19.01197, y: -0.98800004}
+      - {x: 16.988, y: -0.9880293}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -12245,6 +12223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1881765773}
   - component: {fileID: 1881765774}
+  - component: {fileID: 1881765775}
   m_Layer: 0
   m_Name: camera_Dialog21/22
   m_TagString: Untagged
@@ -12312,6 +12291,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1881765775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881765772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e452b98b479697f488ff4c6355da556d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hotKeyPrefab: {fileID: 4425476277692819442, guid: b9cb5be55b823f84f944d44119e350f4, type: 3}
+  keyCode: 114
+  isUsed: 0
 --- !u!1 &1919297589
 GameObject:
   m_ObjectHideFlags: 0
