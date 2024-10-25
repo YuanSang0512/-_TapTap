@@ -87,8 +87,10 @@ public static class SaveSystem
         SaveSystem.SaveByJson("CliffEvent.data", null);
         SaveSystem.SaveByJson("ForestEvent.data", null);
         SaveSystem.SaveByJson("Hos_306Event.data", null);
+        SaveSystem.SaveByJson("Hos_ThirdFloor.data", null);
         SaveSystem.SaveByJson("HospitalEvent.data", null);
         SaveSystem.SaveByJson("ICUEvent.data", null);
+        SaveSystem.SaveByJson("Sch_SecondFloorEvent.data", null);
         SaveSystem.SaveByJson("Sch_210Event.data", null);
         SaveSystem.SaveByJson("Sch_OfficeEvent.data", null);
         SaveSystem.SaveByJson("Sch_RoofTopEvent.data", null);

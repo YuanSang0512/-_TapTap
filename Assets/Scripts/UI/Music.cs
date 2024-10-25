@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Music
 {
-        public static Music instance;
+        private static Music instance;
 
     private Music()
     {

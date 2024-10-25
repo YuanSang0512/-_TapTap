@@ -2540,13 +2540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameSetting: {fileID: 2065681144}
   Settings: {fileID: 1901772812}
-  KeyBoard_txt:
-  - {fileID: 960260013}
-  - {fileID: 320097345}
-  - {fileID: 1385570893}
-  - {fileID: 639854614}
-  - {fileID: 0}
-  - {fileID: 0}
+  KeyBoard_txt: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
