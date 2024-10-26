@@ -19,8 +19,9 @@ public class DialogueTrigger : MonoBehaviour, IEventTrigger
         {
 
             UI.SetActive(true);
-            Player_.isBusy = true;
+
             Player_.SetVelocity(0, 0);
+            Player_.isBusy = true;
 
             Event();
 
