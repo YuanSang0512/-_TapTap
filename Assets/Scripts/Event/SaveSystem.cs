@@ -83,19 +83,18 @@ public static class SaveSystem
     //Clear Data
     public static void ClearData()
     {
-        SaveSystem.SaveByJson("ForestEvent.data", null);
         SaveSystem.SaveByJson("CityEvent.data", null);
-        SaveSystem.SaveByJson("HospitalEvent.data", null);
-        SaveSystem.SaveByJson("Hos_ThirdFloor.data", null);
+        SaveSystem.SaveByJson("CliffEvent.data", null);
+        SaveSystem.SaveByJson("ForestEvent.data", null);
         SaveSystem.SaveByJson("Hos_306Event.data", null);
-        SaveSystem.SaveByJson("SchoolEvent.data", null);
+        SaveSystem.SaveByJson("Hos_ThirdFloor.data", null);
+        SaveSystem.SaveByJson("HospitalEvent.data", null);
+        SaveSystem.SaveByJson("ICUEvent.data", null);
         SaveSystem.SaveByJson("Sch_SecondFloorEvent.data", null);
         SaveSystem.SaveByJson("Sch_210Event.data", null);
         SaveSystem.SaveByJson("Sch_OfficeEvent.data", null);
         SaveSystem.SaveByJson("Sch_RoofTopEvent.data", null);
-        SaveSystem.SaveByJson("TrainEvent.data", null);
-        SaveSystem.SaveByJson("TrainStationEvent.data", null);
-        SaveSystem.SaveByJson("CliffEvent.data", null);
-        SaveSystem.SaveByJson("ICUEvent.data", null);
+        SaveSystem.SaveByJson("SchoolEvent.data", null);
+        SaveSystem.SaveByJson("Train_123Event.data", null);
     }
 }

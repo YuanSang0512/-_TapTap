@@ -14,7 +14,7 @@ public class Entity : MonoBehaviour
     [Header("base info")]
     public int facingDir;
     public float moveSpeed;
-    static public bool isBusy;
+    public bool isBusy;
 
     #endregion
 

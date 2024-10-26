@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -14,10 +15,9 @@ public class rollcharacter : MonoBehaviour
     public float delayBetweenChars = 0.1f;
     public string[] dialog_All;
     public string[][] dialog_Tail;
-    public int index;
-
-    private string TempString = "";
+    public int index = 0;
     public GameObject GameStory;
+    public Player player;
 
     public List<string> characterNames = new List<string>();             //角色名
     public List<Sprite> characterImages = new List<Sprite>();            //角色图片
@@ -30,6 +30,7 @@ public class rollcharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        index = 0;
         dialog_All = peibiao.text.Split('#');
 
 
@@ -51,38 +52,45 @@ public class rollcharacter : MonoBehaviour
 
     private void Update()
     {
-        Talking_Begin(Dialog_index);
+
+        Talking_Begin(Dialog_index - 1 );
     }
 
     IEnumerator ShowText(int i)
     {
         IfFinish = false;
-        textComponent.text = TempString;
+        textComponent.text = ""; // 初始化文本组件内容
         int letter = 0;
 
-        // 新增：从对话中提取角色名，假设对话格式为 "角色名: 对话内容"
-        string characterName = dialog_Tail[i][index].Split('：')[0].Trim();
+        // 从对话中提取角色名，假设对话格式为 "角色名: 对话内容"
+        string fullDialog = dialog_Tail[i][index];
+        string characterName = fullDialog.Split('：')[0].Trim();
+        string dialogWithoutName = fullDialog.Substring(characterName.Length + 1).Trim(); // 移除角色名和冒号
+
         // 显示对应的角色图片
         if (CharacterName_Sprites.ContainsKey(characterName))
         {
             characterSpriteRenderer.sprite = CharacterName_Sprites[characterName];
         }
 
-        while (!IfJump && letter < dialog_Tail[i][index].Length)
+        // 逐字符显示对话内容
+        while (!IfJump && letter < dialogWithoutName.Length)
         {
-            textComponent.text += dialog_Tail[i][index][letter];
+            textComponent.text += dialogWithoutName[letter];
             letter++;
             yield return new WaitForSeconds(delayBetweenChars);
         }
+
         IfJump = false;
-        textComponent.text = dialog_Tail[i][index].Substring(characterName.Length + 1).Trim(); // 显示对话内容，去掉角色名
+        textComponent.text = dialogWithoutName;
         IfFinish = true;
     }
 
 
+
     public void Talking_Begin(int i)    
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (IfFinish)
             {
@@ -91,8 +99,14 @@ public class rollcharacter : MonoBehaviour
                 {
                     index = 0;
                     GameStory.SetActive(false);
+                    player.isBusy = false;
                 }
-                StartCoroutine(ShowText(i));
+                else
+                {
+                    textComponent.text = "";
+                    StartCoroutine(ShowText(i));
+                }
+
             }
             else if (!IfJump && !IfFinish)
             {

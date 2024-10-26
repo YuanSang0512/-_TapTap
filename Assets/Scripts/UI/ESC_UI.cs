@@ -10,7 +10,7 @@ public class ESC_UI : MonoBehaviour
     [SerializeField] private GameObject ESC;
     [SerializeField] GameObject Gamesetting;
     [SerializeField]  GameObject MusciSettin_Slider;
-
+    public Player player;
     private void Awake()
     {
         ESC.SetActive(false);
@@ -31,19 +31,19 @@ public class ESC_UI : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape)) 
         {
             ESC.SetActive(true);
-            Entity.isBusy = true;
+            player.isBusy = true;
         }
     }
 
     public void GameContinue()
     {
         ESC.SetActive(false);
-        Entity.isBusy = false;
+        player.isBusy = false;
     }
 
     public void Gamereturn()
     {
-        Entity.isBusy = false;
+        player.isBusy = false;
         Debug.Log("Exit");
         StartCoroutine(TimeDelay());
         //UnityEngine.SceneManagement.Scene NowScene = SceneManager.GetActiveScene();
