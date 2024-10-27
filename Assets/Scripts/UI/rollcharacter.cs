@@ -27,6 +27,7 @@ public class rollcharacter : MonoBehaviour
 
     private Dictionary<string, Sprite> CharacterName_Sprites;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,6 +91,7 @@ public class rollcharacter : MonoBehaviour
 
     public void Talking_Begin(int i)    
     {
+        SceneSwitchTrigger.CanTo = false;
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (IfFinish)
@@ -98,8 +100,12 @@ public class rollcharacter : MonoBehaviour
                 if (index >= dialog_Tail[i].Length - 1)
                 {
                     index = 0;
-                    GameStory.SetActive(false);
+
+                    SceneSwitchTrigger.CanTo = true;
                     player.isBusy = false;
+
+
+                    GameStory.SetActive(false);
                 }
                 else
                 {

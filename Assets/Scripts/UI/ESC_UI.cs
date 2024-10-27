@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class ESC_UI : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private GameObject ESC;
-    [SerializeField] GameObject Gamesetting;
-    [SerializeField]  GameObject MusciSettin_Slider;
+    public GameObject ESC;
+    [SerializeField]GameObject ESC_Main;
+    [SerializeField]GameObject GameSettingS;
     public Player player;
     private void Awake()
     {
-        ESC.SetActive(false);
+
     }
     void Start()
     {
@@ -30,6 +30,7 @@ public class ESC_UI : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape)) 
         {
+            SceneSwitchTrigger.CanTo = false;
             ESC.SetActive(true);
             player.isBusy = true;
         }
@@ -37,27 +38,41 @@ public class ESC_UI : MonoBehaviour
 
     public void GameContinue()
     {
+
         ESC.SetActive(false);
+
+        SceneSwitchTrigger.CanTo =  true;
         player.isBusy = false;
     }
 
     public void Gamereturn()
     {
+        SceneSwitchTrigger.CanTo = true;
         player.isBusy = false;
-        Debug.Log("Exit");
-        StartCoroutine(TimeDelay());
-        //UnityEngine.SceneManagement.Scene NowScene = SceneManager.GetActiveScene();
-        //SaveSystem.SaveCurrentSceene(NowScene.name);
 
-        #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-        #endif
+        UnityEngine.SceneManagement.Scene NowScene = SceneManager.GetActiveScene();
+        SaveSystem.SaveCurrentSceene(NowScene.name);
+        SceneManager.LoadScene(0);
+
+
+        //Debug.Log("Exit");
+        //StartCoroutine(TimeDelay());
+
+//#if UNITY_EDITOR
+//        UnityEditor.EditorApplication.isPlaying = false;
+//        #endif
     }
 
     public void GameSetting()
     {
-        Gamesetting.SetActive(false);
-        MusciSettin_Slider.SetActive(true);
+        ESC_Main.SetActive(false);
+        GameSettingS.SetActive(true);
+    }
+
+    public void ReGameSetting()
+    {
+        ESC_Main.SetActive(true);
+        GameSettingS.SetActive(false);
     }
 
     IEnumerator TimeDelay()

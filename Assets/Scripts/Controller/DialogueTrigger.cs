@@ -26,6 +26,7 @@ public class DialogueTrigger : MonoBehaviour, IEventTrigger
             Event();
 
             IfUsed = true;
+            Destroy(gameObject);
         }
 
     }

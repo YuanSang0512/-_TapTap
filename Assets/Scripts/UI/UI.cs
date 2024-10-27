@@ -9,11 +9,11 @@ public class UI : MonoBehaviour
     public static int Index;
     // Start is called before the first frame update
     [SerializeField]
-    GameObject GameSetting;
+    GameObject MainMenue;
+    //[SerializeField]
+    //GameObject MainState;        //‘› ±Õ£”√
     [SerializeField]
-    GameObject MainState;
-    [SerializeField]
-    Slider Slider_Musci;
+    GameObject SettingS;        //…Ë÷√
 
     void Start()
     {
@@ -60,7 +60,13 @@ public class UI : MonoBehaviour
 
     public void Setting()
     {
-        GameSetting.SetActive(false);
-        Slider_Musci.gameObject.SetActive(true);
+        MainMenue.SetActive(false);
+        SettingS.gameObject.SetActive(true);
+    }
+
+    public void ReSetting()
+    {
+        MainMenue.SetActive(true);
+        SettingS.gameObject.SetActive(false);
     }
 }
