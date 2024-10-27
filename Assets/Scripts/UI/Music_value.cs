@@ -66,6 +66,10 @@ public class Music_value : MonoBehaviour
         }
     }
 
+    public void Delete_Player()
+    {
+        Destroy(BGM_Player);
+    }
     // Update is called once per frame
 }
 

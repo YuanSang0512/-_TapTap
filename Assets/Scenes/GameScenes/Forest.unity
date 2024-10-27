@@ -3641,6 +3641,14 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1642360323
       objectReference: {fileID: 0}
+    - target: {fileID: 8643878077405148034, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1618945423}
+    - target: {fileID: 8643878077405148034, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Delete_Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8787357539875128956, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
       propertyPath: player
       value: 

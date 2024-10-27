@@ -2137,8 +2137,6 @@ MonoBehaviour:
   hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
   keyCode: 32
   sceneName: Forest
-  BGM_Player: {fileID: 0}
-  BGM: []
 --- !u!4 &185665933
 Transform:
   m_ObjectHideFlags: 0
@@ -5262,6 +5260,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8643878077405148034, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 758133820}
     - target: {fileID: 8787357539875128956, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
       propertyPath: player
       value: 
@@ -14552,14 +14554,6 @@ MonoBehaviour:
   hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
   keyCode: 32
   sceneName: School
-  BGM_Player: {fileID: 0}
-  BGM:
-  - {fileID: 8300000, guid: 433406af328423542b4f2204b662dc8b, type: 3}
-  - {fileID: 8300000, guid: 43889fb440cbe8b4cb95f206c4d18c19, type: 3}
-  - {fileID: 8300000, guid: 9bda4628227955942bf0b62fe474a31f, type: 3}
-  - {fileID: 8300000, guid: 8945cc856b68ba043b5744b0b5b62b57, type: 3}
-  - {fileID: 8300000, guid: 1cee0ed8670f4bc4c8d90d6f4cfb3de5, type: 3}
-  - {fileID: 8300000, guid: e6a5057df762cb843b67b94db0bb07b6, type: 3}
 --- !u!61 &1206820468
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15106,14 +15100,6 @@ MonoBehaviour:
   hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
   keyCode: 32
   sceneName: Hospital
-  BGM_Player: {fileID: 0}
-  BGM:
-  - {fileID: 8300000, guid: 433406af328423542b4f2204b662dc8b, type: 3}
-  - {fileID: 8300000, guid: 43889fb440cbe8b4cb95f206c4d18c19, type: 3}
-  - {fileID: 8300000, guid: 9bda4628227955942bf0b62fe474a31f, type: 3}
-  - {fileID: 8300000, guid: 8945cc856b68ba043b5744b0b5b62b57, type: 3}
-  - {fileID: 8300000, guid: 1cee0ed8670f4bc4c8d90d6f4cfb3de5, type: 3}
-  - {fileID: 8300000, guid: e6a5057df762cb843b67b94db0bb07b6, type: 3}
 --- !u!4 &1291425117
 Transform:
   m_ObjectHideFlags: 0

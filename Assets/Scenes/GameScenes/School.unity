@@ -361,8 +361,6 @@ MonoBehaviour:
   hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
   keyCode: 32
   sceneName: Sch_SecondFloor
-  BGM_Player: {fileID: 0}
-  BGM: []
 --- !u!4 &268448574
 Transform:
   m_ObjectHideFlags: 0
@@ -1655,6 +1653,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 8643878077405148034, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1415457606}
+    - target: {fileID: 8643878077405148034, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Delete_Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8787357539875128956, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
       propertyPath: player
       value: 
@@ -2045,8 +2051,6 @@ MonoBehaviour:
   hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
   keyCode: 32
   sceneName: City
-  BGM_Player: {fileID: 0}
-  BGM: []
 --- !u!61 &1283634291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2505,8 +2509,6 @@ MonoBehaviour:
   hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
   keyCode: 32
   sceneName: Sch_Office
-  BGM_Player: {fileID: 0}
-  BGM: []
 --- !u!61 &1818946355
 BoxCollider2D:
   m_ObjectHideFlags: 0

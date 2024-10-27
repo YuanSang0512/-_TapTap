@@ -326,8 +326,6 @@ MonoBehaviour:
   hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
   keyCode: 32
   sceneName: School
-  BGM_Player: {fileID: 0}
-  BGM: []
 --- !u!61 &206224230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1872,6 +1870,7 @@ MonoBehaviour:
   Clue_text: "\u83B7\u5F97\u7EBF\u7D22 : "
   Clue: {fileID: 0}
   Clue_Fa: {fileID: 2111318270}
+  Particle: {fileID: 0}
 --- !u!1001 &1154574047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2398,6 +2397,14 @@ PrefabInstance:
     - target: {fileID: 7642976744671442364, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
       propertyPath: m_Name
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643878077405148034, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 3570758}
+    - target: {fileID: 8643878077405148034, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Delete_Player
       objectReference: {fileID: 0}
     - target: {fileID: 8787357539875128956, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
       propertyPath: player
