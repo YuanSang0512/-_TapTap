@@ -41,7 +41,7 @@ public class jundge : MonoBehaviour
                 create_.sprite= Sprite;
                 create_.transform.localScale = new Vector3( 1, 1, 1 );
                 jindutiao.gameObject.SetActive(false);
-                create_.material = Fault;
+                create_.material = Fault;   
                 StartCoroutine(Delay());
                 
         }

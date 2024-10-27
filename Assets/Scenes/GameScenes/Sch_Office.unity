@@ -1869,9 +1869,9 @@ MonoBehaviour:
   hotKeyPrefab: {fileID: 4425476277692819442, guid: b9cb5be55b823f84f944d44119e350f4, type: 3}
   keyCode: 114
   isUsed: 0
-  Clue_text: 
+  Clue_text: "\u83B7\u5F97\u7EBF\u7D22 : "
   Clue: {fileID: 0}
-  Clue_Fa: {fileID: 0}
+  Clue_Fa: {fileID: 2111318270}
 --- !u!1001 &1154574047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2412,6 +2412,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
+--- !u!1 &2111318270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7642976744671442364, guid: d0c27969c5d0ac240ad3b60a333080d0, type: 3}
+  m_PrefabInstance: {fileID: 2111318269}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

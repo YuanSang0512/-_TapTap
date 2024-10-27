@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 64213285}
   - component: {fileID: 64213284}
   - component: {fileID: 64213283}
+  - component: {fileID: 64213286}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -190,6 +191,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &64213286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64213282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ad087cc63932246abe5638742f9c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGM_Player: {fileID: 0}
+  BGM:
+  - {fileID: 8300000, guid: 433406af328423542b4f2204b662dc8b, type: 3}
+  - {fileID: 8300000, guid: 43889fb440cbe8b4cb95f206c4d18c19, type: 3}
+  - {fileID: 8300000, guid: 9bda4628227955942bf0b62fe474a31f, type: 3}
+  - {fileID: 8300000, guid: 8945cc856b68ba043b5744b0b5b62b57, type: 3}
+  - {fileID: 8300000, guid: 1cee0ed8670f4bc4c8d90d6f4cfb3de5, type: 3}
+  - {fileID: 8300000, guid: e6a5057df762cb843b67b94db0bb07b6, type: 3}
+  - {fileID: 8300000, guid: 404029e03aae6d945ba3889c100f384c, type: 3}
 --- !u!1 &82582819
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.44206142, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -923,7 +945,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6D4B\u8BD5\u4F7F\u7528"
+  m_Text: "\u5FE0\u5FC3\u611F\u8C22\u60A8\u7684\u6E38\u73A9"
 --- !u!222 &518739704
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class Take_thing : EventTrigger
     //[SerializeField] string guide;
     [SerializeField]private Text Clue;
     [SerializeField] private GameObject Clue_Fa;
-
+    [SerializeField]ParticleSystem Particle;
     public override void Update()
     {
         base.Update();
@@ -22,6 +22,10 @@ public class Take_thing : EventTrigger
             Clue_TMP.text = Clue_text;
             Clue_TMP.transform.SetParent(Clue_Fa.transform, false);
 
+            var main = Particle.main;
+            main.loop = false;
+
+            DeleteEvent();
             Event();
 
             //DialogueTriggerDialogue.IfUsed = false;

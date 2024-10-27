@@ -3665,14 +3665,6 @@ MonoBehaviour:
   hotKeyPrefab: {fileID: 4425476277692819442, guid: ff8ce25853a0e9141a699dae9a2fa2fc, type: 3}
   keyCode: 32
   sceneName: Cliff
-  BGM_Player: {fileID: 0}
-  BGM:
-  - {fileID: 8300000, guid: 433406af328423542b4f2204b662dc8b, type: 3}
-  - {fileID: 8300000, guid: 43889fb440cbe8b4cb95f206c4d18c19, type: 3}
-  - {fileID: 8300000, guid: 9bda4628227955942bf0b62fe474a31f, type: 3}
-  - {fileID: 8300000, guid: 8945cc856b68ba043b5744b0b5b62b57, type: 3}
-  - {fileID: 8300000, guid: 1cee0ed8670f4bc4c8d90d6f4cfb3de5, type: 3}
-  - {fileID: 8300000, guid: e6a5057df762cb843b67b94db0bb07b6, type: 3}
 --- !u!1001 &2087340032
 PrefabInstance:
   m_ObjectHideFlags: 0
