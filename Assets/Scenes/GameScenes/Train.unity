@@ -7104,10 +7104,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1339456753}
     - target: {fileID: 4007949542333884755, guid: 78675c54ee9a10d48acacc157580a2b4, type: 3}
-      propertyPath: GameStory
-      value: 
-      objectReference: {fileID: 1612655843}
-    - target: {fileID: 4007949542333884755, guid: 78675c54ee9a10d48acacc157580a2b4, type: 3}
       propertyPath: sceneSwitchTriggers
       value: 
       objectReference: {fileID: 0}

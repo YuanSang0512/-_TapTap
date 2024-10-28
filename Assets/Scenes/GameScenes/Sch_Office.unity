@@ -1868,7 +1868,7 @@ MonoBehaviour:
   keyCode: 114
   isUsed: 0
   Clue_text: "\u83B7\u5F97\u7EBF\u7D22 : 210\u7684\u94A5\u5319"
-  Clue: {fileID: 0}
+  Clue: {fileID: 4551181741157819685, guid: 645a64cf1b9b2a047bbda9f8ae7717ab, type: 3}
   Clue_Fa: {fileID: 2111318270}
   Particle: {fileID: 1381835822}
 --- !u!1001 &1154574047

@@ -32,7 +32,6 @@ public class rollcharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        textComponent.text = "";
         index = 0;
         dialog_All = peibiao.text.Split('#');
 
@@ -104,13 +103,17 @@ public class rollcharacter : MonoBehaviour
                     index = 0;
 
                     SceneSwitchTrigger.CanTo = true;
-                    player.isBusy = false;
+                    player.isBusy = false;                //回调使用参数;
+
+                    textComponent.text = "";       //对话结束去除末尾参数
+
+
                     if (SceneManager.GetActiveScene().name == "Cliff" && i == 24)
                         SceneManager.LoadScene("Vedio");
                     else if (SceneManager.GetActiveScene().name == "ICU" && i == 28)
-                        SceneManager.LoadScene("gameover");
+                        SceneManager.LoadScene("gameover");      //场景判断进行函场景切换;
 
-                    GameStory.SetActive(false);
+                    GameStory.SetActive(false);            //删除对话UI
                 }
                 else
                 {

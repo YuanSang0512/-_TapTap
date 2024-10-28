@@ -351,15 +351,15 @@ MonoBehaviour:
   GameStory: {fileID: 3640852262396677453}
   player: {fileID: 0}
   characterNames:
-  - A
-  - B
-  - C
+  - "\u4E50\u7476"
+  - "\u542F\u660E"
+  - "\u7B51\u68A6\u8005"
   - PDA
   characterImages:
-  - {fileID: -191917164, guid: e913250f3e7f6c242ab4c45db8ab0dc1, type: 3}
-  - {fileID: 1159470524, guid: e913250f3e7f6c242ab4c45db8ab0dc1, type: 3}
+  - {fileID: 21300000, guid: a689281f545979940b5cedad12ec31a8, type: 3}
+  - {fileID: 21300000, guid: 9c22439f7b2eadb41b70e5385d667660, type: 3}
   - {fileID: 21300000, guid: 44d2293b70fa08743a61ce987b2ef1ed, type: 3}
-  - {fileID: 1102994157, guid: e913250f3e7f6c242ab4c45db8ab0dc1, type: 3}
+  - {fileID: 21300000, guid: 1bf101c8c2b8aab4484cd2ff08be047b, type: 3}
   characterSpriteRenderer: {fileID: 6224745775337334003}
 --- !u!1 &9053207381472164169
 GameObject:

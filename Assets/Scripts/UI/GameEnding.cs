@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameEnding : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class GameEnding : MonoBehaviour
     [SerializeField]
     private float fadeDuration = 2f; // 每个文本渐变效果的持续时间
     [SerializeField] Scrollbar Scrollbar;
-
+    public Text text1;
     public GameObject Father;
 
     float duration = 15f; // 滚动动画的持续时间
@@ -20,6 +21,11 @@ public class GameEnding : MonoBehaviour
     void Start()
     {
         StartCoroutine(FadeInTexts());
+    }
+
+    private void Update()
+    {
+        Sceen_To_Main();
     }
 
     IEnumerator FadeInTexts()
@@ -62,10 +68,28 @@ public class GameEnding : MonoBehaviour
         while (Time.time - startTime < duration)
         {
             float t = (Time.time - startTime) / duration;
-            Scrollbar.value = Mathf.Lerp(0.7f, 0, t);
+            Scrollbar.value = Mathf.Lerp(0.8f, 0, t/2);
             yield return null;
         }
-        Scrollbar.value = 1;
+
+    }
+
+    public void Sceen_To_Main()
+    {
+        if(Scrollbar.value < 0.1f)
+        {
+            text1.text = "点击回到游戏初始界面";
+            if(Input.GetMouseButton(0))
+            {
+                AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
+                List<AudioSource> loudAudioSources = new List<AudioSource>();
+                foreach (AudioSource audioSource in allAudioSources)
+                {
+                    Destroy(audioSource);
+                }
+                SceneManager.LoadScene("main");
+            }
+        }
     }
 
 
