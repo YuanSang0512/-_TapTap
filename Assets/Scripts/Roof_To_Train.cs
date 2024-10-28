@@ -17,11 +17,11 @@ public class Roof_To_Train : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (one.isUsed && two.isUsed&&three.isUsed) 
+        if (one.isUsed && two.isUsed && three.isUsed)
         {
-            SceneSwitchTrigger.CanTo = true;
+            four.enabled = true;
         }
         else
-            SceneSwitchTrigger.CanTo = false;
+            four.enabled = false;
     }
 }

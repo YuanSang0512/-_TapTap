@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class rollcharacter : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class rollcharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        textComponent.text = "";
         index = 0;
         dialog_All = peibiao.text.Split('#');
 
@@ -103,7 +105,10 @@ public class rollcharacter : MonoBehaviour
 
                     SceneSwitchTrigger.CanTo = true;
                     player.isBusy = false;
-
+                    if (SceneManager.GetActiveScene().name == "Cliff" && i == 24)
+                        SceneManager.LoadScene("Vedio");
+                    else if (SceneManager.GetActiveScene().name == "ICU" && i == 28)
+                        SceneManager.LoadScene("gameover");
 
                     GameStory.SetActive(false);
                 }

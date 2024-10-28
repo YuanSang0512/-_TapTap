@@ -261,6 +261,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 836776062}
+    - target: {fileID: 1965814899090584099, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965814899090584099, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.38
+      objectReference: {fileID: 0}
     - target: {fileID: 2505605402380979277, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
       propertyPath: m_Name
       value: Male
@@ -309,6 +317,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5815325691799775113, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 836776062}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -316,7 +328,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
 --- !u!114 &351256688 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1103568435606708595, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5815325691799775113, guid: 64d4d51374fb9844bad4c98b8f8c0b96, type: 3}
   m_PrefabInstance: {fileID: 351256687}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -762,12 +774,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2245458953996942663, guid: b074b810627dfd046bab642dae0bbc05, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.98232
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245458953996942663, guid: b074b810627dfd046bab642dae0bbc05, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.98232
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245458953996942663, guid: b074b810627dfd046bab642dae0bbc05, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.98232
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245458953996942663, guid: b074b810627dfd046bab642dae0bbc05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.63
+      value: 3.03
       objectReference: {fileID: 0}
     - target: {fileID: 2245458953996942663, guid: b074b810627dfd046bab642dae0bbc05, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0.26
       objectReference: {fileID: 0}
     - target: {fileID: 2245458953996942663, guid: b074b810627dfd046bab642dae0bbc05, type: 3}
       propertyPath: m_LocalPosition.z
@@ -835,11 +859,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 322659616400388485, guid: 4c64a4dd357a8c143880e8b26e34ac93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0000047683716
+      value: 0.000005722046
       objectReference: {fileID: 0}
     - target: {fileID: 322659616400388485, guid: 4c64a4dd357a8c143880e8b26e34ac93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0030417442
+      value: 0.004951954
       objectReference: {fileID: 0}
     - target: {fileID: 4411380524151727766, guid: 4c64a4dd357a8c143880e8b26e34ac93, type: 3}
       propertyPath: animator
@@ -2469,11 +2493,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6331344338000990041, guid: 8627fed2c17c1c245b7a3cb310caecad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4.75
+      value: -3.71
       objectReference: {fileID: 0}
     - target: {fileID: 6331344338000990041, guid: 8627fed2c17c1c245b7a3cb310caecad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.45
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 6331344338000990041, guid: 8627fed2c17c1c245b7a3cb310caecad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2750,8 +2774,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1998142492}
-  - {fileID: 351256687}
-  - {fileID: 836776061}
   - {fileID: 1133242533}
   - {fileID: 755618709}
   - {fileID: 1808387186}
@@ -2767,3 +2789,5 @@ SceneRoots:
   - {fileID: 2136041460}
   - {fileID: 362504337}
   - {fileID: 1769474005}
+  - {fileID: 351256687}
+  - {fileID: 836776061}

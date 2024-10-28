@@ -59,7 +59,7 @@ public class Music_value : MonoBehaviour
             BGM_Player.clip = BGM[5];
             BGM_Player.Play();
         }
-        else if (name == "Cliff") ;
+        else if (name == "gameover")
         {
             BGM_Player.clip = BGM[6];
             BGM_Player.Play();

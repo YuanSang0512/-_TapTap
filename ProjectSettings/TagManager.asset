@@ -58,3 +58,6 @@ TagManager:
   - name: Fader
     uniqueID: 2652606973
     locked: 0
+  - name: Vedio
+    uniqueID: 2719875141
+    locked: 0

@@ -18,13 +18,16 @@ public class CameraEvent : EventTrigger
         base.Update();
         if (hotKey != null && Input.GetKeyDown(keyCode) && !isUsed)
         {
+
+            DialogueTriggerDialogue.IfUsed = false;
+
+
             isUsed = true;
 
             ScreenShot.SetActive(true);
 
             Event();
 
-            DialogueTriggerDialogue.IfUsed = false;
 
         }
     }

@@ -16,7 +16,7 @@ public class Male : Entity
     protected override void Awake()
     {
         base.Awake();
-        seeker = GetComponent<Seeker>();
+        seeker = GetComponentInChildren<Seeker>();
     }
 
     protected override void Start()
@@ -41,10 +41,14 @@ public class Male : Entity
                 return;
 
             Vector2 dir = (pathPointList[currentIndex] - transform.position).normalized;
+            animator.SetBool("Move", true);
+            animator.SetBool("Idle", false);
             SetVelocity(dir.x * moveSpeed, dir.y * moveSpeed);
         }
         else
         {
+            animator.SetBool("Move", false);
+            animator.SetBool("Idle", true);
             rb.velocity = Vector2.zero;
         }
 

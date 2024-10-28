@@ -95,6 +95,7 @@ public static class SaveSystem
         SaveSystem.SaveByJson("Sch_OfficeEvent.data", null);
         SaveSystem.SaveByJson("Sch_RoofTopEvent.data", null);
         SaveSystem.SaveByJson("SchoolEvent.data", null);
-        SaveSystem.SaveByJson("Train_123Event.data", null);
+        SaveSystem.SaveByJson("TrainEvent.data", null);
+        SaveSystem.SaveByJson("TrainStationEvent.data", null);
     }
 }

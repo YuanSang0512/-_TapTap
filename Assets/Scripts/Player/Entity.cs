@@ -15,6 +15,7 @@ public class Entity : MonoBehaviour
     public int facingDir;
     public float moveSpeed;
     public bool isBusy;
+    public bool facingRight = true;
 
     #endregion
 
@@ -35,11 +36,26 @@ public class Entity : MonoBehaviour
 
     }
 
+    public void FlipController(float _xVelocity)
+    {
+        if(_xVelocity > 0 && !facingRight)
+        {
+            facingRight = true;
+            transform.Rotate(0, 180, 0);
+        }
+        else if(_xVelocity < 0 && facingRight)
+        {
+            facingRight = false;
+            transform.Rotate(0, 180, 0);
+        }
+    }
+
     public void SetVelocity(float _xVelocity, float _yVelocity)
     {
         if (isBusy)
             return;
         rb.velocity = new Vector2(_xVelocity, _yVelocity);
+        FlipController(_xVelocity);
     }
 
     public void SetBusy(bool _busy)

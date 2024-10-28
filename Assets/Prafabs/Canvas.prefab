@@ -103,7 +103,7 @@ RectTransform:
   m_GameObject: {fileID: 3124949990695457641}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 200, y: 200, z: 200}
+  m_LocalScale: {x: 40, y: 40, z: 40}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7090841274672573301}
@@ -151,15 +151,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1642360323
-  m_SortingLayer: 5
-  m_SortingOrder: 1
+  m_SortingLayerID: -2041945971
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 5220530588002096209}
   - component: {fileID: 2458873227784887626}
   m_Layer: 5
-  m_Name: TalkingSystem
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -349,6 +349,7 @@ MonoBehaviour:
   dialog_All: []
   index: 0
   GameStory: {fileID: 3640852262396677453}
+  player: {fileID: 0}
   characterNames:
   - A
   - B
@@ -356,8 +357,8 @@ MonoBehaviour:
   - PDA
   characterImages:
   - {fileID: -191917164, guid: e913250f3e7f6c242ab4c45db8ab0dc1, type: 3}
-  - {fileID: 1159470524, guid: e913250f3e7f6c242ab4c45db8ab0dc1, type: 3}
-  - {fileID: 583463586, guid: e913250f3e7f6c242ab4c45db8ab0dc1, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 44d2293b70fa08743a61ce987b2ef1ed, type: 3}
   - {fileID: 1102994157, guid: e913250f3e7f6c242ab4c45db8ab0dc1, type: 3}
   characterSpriteRenderer: {fileID: 6224745775337334003}
 --- !u!1 &9053207381472164169
